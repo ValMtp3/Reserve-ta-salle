@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation Salle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <div class="p-4">
+        <input type="text" placeholder="Salle 115"
+            class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800">
+    </div>
+
+    <div class="flex justify-between px-4">
+        <button class="px-4 py-2 bg-gray-200 rounded-full text-sm text-gray-800">Trier</button>
+        <div class="relative">
+            <button class="px-4 py-2 bg-gray-200 rounded-full text-sm flex items-center gap-2 text-gray-800">
+                Filtres <span class="px-2 py-1 text-xs bg-blue-200 text-gray-800 rounded-full">1</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="overflow-x-auto px-4 my-2">
+        <div class="flex space-x-2 justify-center">
+            <span class="bg-blue-100 text-gray-800 px-3 py-1 rounded-full text-xs whitespace-nowrap">Vidéo
+                Projecteur</span>
+            <span class="bg-blue-100 text-gray-800 px-3 py-1 rounded-full text-xs whitespace-nowrap">Privée</span>
+            <span class="bg-blue-100 text-gray-800 px-3 py-1 rounded-full text-xs whitespace-nowrap">RDC</span>
+            <span class="bg-blue-100 text-gray-800 px-3 py-1 rounded-full text-xs whitespace-nowrap">Grande</span>
+        </div>
+    </div>
+
+    <div class="p-4">
+        <h2 class="text-lg font-bold text-center border bg-[#DE704B] rounded-lg my-6 mx-10 p-4">Salle 03</h2>
+        <div class="flex items-center gap-4 mb-20 justify-center">
+            <span class="flex items-center text-gray-600">
+                <img src="assets/app_assets/Plan.png" alt="M" class="h-6 w-6">
+                <span class="ml-1">L</span>
+            </span>
+            <span class="flex items-center text-gray-600">
+                <img src="assets/app_assets/Shared flat.png" alt="12 pers" class="h-6 w-6">
+                <span class="ml-1">Occupée</span>
+            </span>
+            <span class="flex items-center text-gray-600">
+                <img src="assets/app_assets/Work from home.png" alt="coworking" class="h-6 w-6">
+                <span class="ml-1">Privée</span>
+            </span>
+        </div>
+
+        <div class="p-4">
+            <div class="bg-white p-4 rounded-lg">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="text-right pr-2 text-gray-600">
+                        <div class="h-10 whitespace-nowrap">Lun - 23 Sep</div>
+                        <div class="h-10">09:00</div>
+                        <div class="h-10">10:00</div>
+                        <div class="h-10">11:00</div>
+                        <div class="h-10">12:00</div>
+                        <div class="h-10">13:00</div>
+                        <div class="h-10">14:00</div>
+                        <div class="h-10">15:00</div>
+                        <div class="h-10">16:00</div>
+                        <div class="h-10">17:00</div>
+                    </div>
+
+                    <div>
+                        <div class="h-10"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 bg-blue-100 border-l-4 border-gray-800"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                    </div>
+
+                    <div>
+                        <div class="h-10 whitespace-nowrap">Mar - 24 Sep</div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 bg-blue-100 border-l-4 border-gray-800"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                        <div class="h-10 border-b border-gray-200"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4">
+            <a href="Validation.html"
+                class="flex mx-auto justify-center rounded-md bg-blue-100 px-11 py-1.5 text-sm font-semibold leading-6 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-100">
+                Reserver
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
