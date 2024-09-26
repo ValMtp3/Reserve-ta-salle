@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Reserve ta salle</title>
+        <link href="/src/assets/css/output.css" rel="stylesheet">
+
+        <!--CSS pour cacher scrollbar horizontal-->
+        <style>
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="relative flex flex-col space-y-2 px-[2vh] w-full">
+            <!--Barre de recherche-->
+            <div class="flex h-9 w-full mt-[5vh]">
+                <form action="#" method="POST" class="flex mx-auto items-center">
+                    <button type="submit">
+                        <img src="/src/assets/app_assets/loupeIcon.png" class="h-7 w-7">
+                    </button>
+                    <input type="text" placeholder="Rechercher" name="searchRoom" id="searchRoom" class="w-full rounded-lg bg-[#D7E7F3] focus:outline-none">
+                </form>
+            </div>
+                <!--Filtres des salles-->
+            <form action="" method="POST" class="flex overflow-x-auto space-x-4 text-xs scrollbar-hide">
+                <select name="Liste_Filtre_Taille" id="Liste_Filtre_Taille" class="border-2 rounded-lg flex-shrink-0">
+                    <option selected value="">Taille</option>
+                    <option value="Filtre_Petite">Petite</option>
+                    <option value="Filtre_Moyenne">Moyenne</option>
+                    <option value="Filtre_Grande">Grande</option>
+                </select>
+                <select name="Liste_Filtre_Equipements" id="Liste_Filtre_Equipements" class="border-2 rounded-lg flex-shrink-0">
+                    <option selected value="">Équipements</option>
+                    <option value="Filtre_VideoProjecteur">Vidéo Projecteur</option>
+                    <option value="Filtre_Ecran">Écran</option>
+                </select>
+                <select name="Liste_Filtre_Etage" id="Liste_Filtre_Etage" class="border-2 rounded-lg flex-shrink-0">
+                    <option selected value="">Étage</option>
+                    <option value="Filtre_RezDeChaussee">Rez-de-chaussée</option>
+                    <option value="Filtre_PremiereEtage">1ére étage</option>
+                    <option value="Filtre_DeuxiemeEtage">2éme étage</option>
+                </select>
+                <select name="Liste_Filtre_Categorie" id="Liste_Filtre_Categorie" class="border-2 rounded-lg flex-shrink-0">
+                    <option selected value="">Catégorie</option>
+                    <option value="Filtre_Libre">Libre</option>
+                    <option value="Filtre_Coworking">Coworking</option>
+                    <option value="Filtre_Occupee">Occupée</option>
+                </select>
+            </form>
+
+            <!-- Section disponibilité des salles -->
+            <div class="w-full max-w-lg">
+                <!-- Légende -->
+                <div class="mb-8 mt-8">
+                    <h2 class="text-lg font-semibold">Disponibilité des salles</h2>
+                    <div class="flex items-center space-x-4 mt-2 text-sm">
+                        <div class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-[#8D9E36] rounded-full mr-2"></span>
+                            <span>Libre</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-[#EFBB52] rounded-full mr-2"></span>
+                            <span>Coworking</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-[#DE704B] rounded-full mr-2"></span>
+                            <span>Occupée</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutons de disponibilité des salles -->
+                <div class="grid grid-cols-3 gap-4 mx-5 font-sans">
+
+                    <a href="detail_salle_01.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 01</a>
+                    <a href="detail_salle_02.html" class="bg-[#EFBB52] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 02</a>
+                    <a href="detail_salle_03.html" class="bg-[#DE704B] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 03</a>
+                    <a href="salle100.html" class="bg-[#EFBB52] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 100</a>
+                    <a href="salle101.html" class="bg-[#EFBB52] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 101</a>
+                    <a href="salle102.html" class="bg-[#DE704B] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 102</a>
+                    <a href="salle103.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 103</a>
+                    <a href="salle104.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 104</a>
+                    <a href="salle105.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 105</a>
+                    <a href="salle106.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 106</a>
+                    <a href="salle107.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 107</a>
+                    <a href="salle108.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 108</a>
+                    <a href="salle109.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 109</a>
+                    <a href="salle110.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 110</a>
+                    <a href="salle111.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 111</a>
+                    <a href="salle112.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 112</a>
+                    <a href="salle113.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 113</a>
+                    <a href="salle114.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 114</a>
+                    <a href="salle200.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 200</a>
+                    <a href="salle201.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 201</a>
+                    <a href="salle202.html" class="bg-[#8D9E36] text-white font-bold py-2 px-4 rounded-lg text-center block">Salle 202</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
